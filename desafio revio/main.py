@@ -37,54 +37,7 @@ def procurar_produtos() -> list[Geladeira]:
         geladeira = Geladeira(nomes_de_produtos,nota_float,preco_float)
         geladeiras.append(geladeira)
     return geladeiras
-"""
-lista_geladeiras = procurar_produtos()
 
-while True:
-    
-    menu = int (input())
-    match menu:
-        case 1:
-            i=0
-            x=float(input())
-            y=float(input())
-            for geladeira in lista_geladeiras:
-            
-                if x<=lista_geladeiras[i].nota<=y:
-                    print(geladeira)
-                    print("")
-                    i+=1
-                else:
-                    i+=1
-        case 2:
-            i=0
-            x=float(input())
-            y=float(input())
-            for geladeira in range(len(lista_geladeiras)):
-            
-                if x<=lista_geladeiras[i].preco<=y:
-                    print(lista_geladeiras[i])
-                    print("")
-                    i+=1
-                else:
-                    i+=1
-        case 3:
-            
-            x=str(input())
-            for geladeira in range(len(lista_geladeiras)):
-                nome_geladeira=lista_geladeiras[geladeira].nome
-                nome_lista=nome_geladeira.split(" ")
-                
-                for j in nome_lista:
-                    
-                    if x==j:
-                        print(lista_geladeiras[geladeira])
-                        print("")
-                
-        case 4:
-            break
-        case _:
-            print("não existe essa opção")
- """                       
+                       
             
                 
